@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="S2_Cristian_Morocho.notas">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="CALCULO DE NOTAS" FontSize="22" 
+                   TextColor="Black" HorizontalTextAlignment="Center"
+                   />
+
+            <Label x:Name="lblusuario" HorizontalTextAlignment="End" FontSize="16"/>
+            
+            <Label Text="PARCIAL 1" FontSize="18"
+                   TextColor="Blue" HorizontalTextAlignment="Start"/>
+
+            <Entry x:Name="txtnotaUno" Placeholder="Ingrese la nota 1" Keyboard="Numeric" TextChanged="TxtnotaUno_TextChanged" />
+            <Entry x:Name="txtnotaDos" Placeholder="Ingrese la nota 2" Keyboard="Numeric" TextChanged="TxtnotaDos_TextChanged"/>
+
+            <Entry x:Name="txtpromedio1" Placeholder="El promedio parcial 1 es..." IsEnabled="False"/>
+
+            <Label Text="PARCIAL 2" FontSize="18" 
+                   TextColor="Blue" HorizontalTextAlignment="Start"/>
+
+            <Entry x:Name="txtnota1" Placeholder="Ingrese nota 1" Keyboard="Numeric" TextChanged="Txtnota1_TextChanged"/>
+            <Entry x:Name="txtnota2" Placeholder="Ingrese nota 2" Keyboard="Numeric" TextChanged="Txtnota2_TextChanged"/>
+
+            <Entry x:Name="txtpromedio2" Placeholder="El promedio parcial 2 es....." IsEnabled="False"/>
+
+            <Label Text="NOTA FINAL" FontSize="18"
+                   TextColor="Red" HorizontalTextAlignment="Start"/>
+
+            <Entry x:Name="txtnotaFinal" Placeholder="Su nota final es...." IsEnabled="False"/>
+
+            <Button x:Name="btnCalcular" Text="Calcular Promedio" Clicked="BtnCalcular_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
